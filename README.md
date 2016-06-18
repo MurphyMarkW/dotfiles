@@ -2,6 +2,9 @@
 
 A set of dotfiles managed purely through git.
 
+###### References:
+- The git book: https://git-scm.com/book/en/v2/
+
 ## Special Considerations
 
 Certain conventions are used by git-dotfiles that may seem odd or confusing
