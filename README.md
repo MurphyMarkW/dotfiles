@@ -2,6 +2,8 @@
 
 A set of dotfiles managed purely through git.
 
+## Special Considerations
+
 ###### README.md
 Since the README.md is usually rendered nicely in graphical browsers, such
 as on github, this README serves a dual purpose. The first is to document
