@@ -7,8 +7,16 @@ A set of dotfiles managed purely through git.
 
 ## Special Considerations
 
-Certain conventions are used by git-dotfiles that may seem odd or confusing
-when first encountered. The following should be kept in mind:
+Certain conventions are used by rhese dotfiles that may seem odd or confusing
+when first encountered.
+
+###### secrets
+Secrets do not belong in dotfiles repositories. As much as possible, try to
+prevent committing and pushing secrets to public dotfiles repositories. From
+the [HashiCorp Vault](https://www.vaultproject.io/) documentation,
+
+> A secret is anything that you want to tightly control access to,
+> such as API keys, passwords, certificates, and more.
 
 ###### README.md
 Since the README.md is usually rendered nicely in graphical browsers, such
