@@ -2,6 +2,29 @@
 
 A set of dotfiles managed purely through git.
 
+## Getting Started
+
+To use this dotfiles repository, simply clone the repository to your home
+directory. To set up the home directory to track this repository,
+
+```bash
+$ git init
+$ git remote add origin git@github.com:MurphyMarkW/git-dotfiles.git
+$ git pull origin master
+```
+
+Since the home directory will likely not be empty, git may complain about
+files that would be overwritten. If you want to preserve those files, you
+should rename them or move them to another location. Once done, you can
+forcefully overwrite any conflicting files by performing a
+
+```bash
+$ git reset --hard origin/master
+```
+
+*Note* that this will not affect any files that do not have corresponding
+entries in the repository.
+
 ###### References:
 - The git book: https://git-scm.com/book/en/v2/
 
