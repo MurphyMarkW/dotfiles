@@ -22,3 +22,11 @@ added the `-f / --force` flag will be required. Subsequent updates to added
 files are performed as normal. Because git will use the first repository that
 is encountered while traversing to the root of the filesystem tree, this will
 not affect any additional git repositories that exist within this repository.
+
+## Managed Files
+
+###### .gitconfig
+Configuration options for git.
+
+###### .config/nvim
+Configuration options for NeoVim.
