@@ -1,8 +1,6 @@
-# git-dotfiles
+###### This repository is mine. There are many like it, but this one is mine.
 
-A set of dotfiles (and more) managed purely through git. Fork your own today!
-
-This repository is mine. There are many like it, but this one is mine.
+A set of personalized dotfiles (and more) managed purely through git.
 
 ## Getting Started
 
