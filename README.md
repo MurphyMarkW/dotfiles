@@ -1,6 +1,8 @@
 # git-dotfiles
 
-A set of dotfiles and more managed purely through git. Fork your own today!
+A set of dotfiles (and more) managed purely through git. Fork your own today!
+
+This repository is mine. There are many like it, but this one is mine.
 
 ## Getting Started
 
@@ -57,19 +59,3 @@ added the `-f / --force` flag will be required. Subsequent updates to added
 files are performed as normal. Because git will use the first repository that
 is encountered while traversing to the root of the filesystem tree, this will
 not affect any additional git repositories that exist within this repository.
-
-## Managed Files
-
-###### .gitconfig
-Configuration options for git.
-
-###### .config/nvim
-Configuration options for NeoVim.
-
-###### zsh
-- .zshrc
-- .zpreztorc
-- .zshenv
-- .zlogin
-- .zlogout
-- .zprofile
