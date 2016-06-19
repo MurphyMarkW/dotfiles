@@ -1,11 +1,12 @@
 ###### This repository is mine. There are many like it, but this one is mine.
 
-A set of personalized dotfiles (and more) managed purely through git.
+Dotfiles repositories are used to manage, track and assist in the deployment
+of personalized configurations. [A number of ways](https://dotfiles.github.io)
+exist for managing dotfiles via git. As much as possible, this one tries to be
+*just git* with all the good and bad that comes along with that.
 
 ## Getting Started
-
-To use this dotfiles repository, simply clone the repository to your home
-directory. To set up the home directory to track this repository,
+Setting up a new home directory to use this repository is as simple as:
 
 ```bash
 $ git init
@@ -23,37 +24,48 @@ forcefully overwrite any conflicting files by performing a
 $ git reset --hard origin/master
 ```
 
-*Note* that this will not affect any files that do not have corresponding
+**Note** that this will not affect any files that do not have corresponding
 entries in the repository.
-
-###### References:
-- The git book: https://git-scm.com/book/en/v2/
 
 ## Special Considerations
 
-Certain conventions are used by rhese dotfiles that may seem odd or confusing
-when first encountered.
+Certain conventions are used by these dotfiles that may seem odd or confusing
+when first encountered. Please read through these if it is your first time
+using these dotfiles, as they are important to know!
+
+###### git all the way down
+This style of dotfile management makes a concious decision to make the home
+directory itself a git repository. This has the benefit that any file within
+a subtree of the home directory can be managed by the git repository without
+any special mechanism other than a simple `git add -f <file>`. Always want
+that `~/src/my-special-script/foo.sh` to be present on every system? Just
+add it to the repository and `git pull` to victory!
+
+###### .gitignore
+Because of the above, the gitignore is set to match everything (`*`) to prevent
+accidentally adding files to the repo. A side effect of this is that the first
+time a file is added the `-f / --force` flag will be required. This should add
+a natural interrupt in most people's git usage since the `-f` is not usually
+added to git commands by default (if you are doing that - don't!). Subsequent
+updates to added files are performed as normal. Because git will use the first
+repository that is encountered while traversing to the root of the filesystem
+tree, this will not affect any additional git repositories that exist within
+this repository.
 
 ###### secrets
-Secrets do not belong in dotfiles repositories. As much as possible, try to
-prevent committing and pushing secrets to public dotfiles repositories. From
-the [HashiCorp Vault](https://www.vaultproject.io/) documentation,
+From the [HashiCorp Vault](https://www.vaultproject.io/) documentation,
 
 > A secret is anything that you want to tightly control access to,
 > such as API keys, passwords, certificates, and more.
 
-###### README.md
-Since the README.md is usually rendered nicely in graphical browsers, such
-as on github, this README serves a dual purpose. The first is to document
-the repository and how to use it, and the second is to document a specific
-set of dotfiles so that someone (e.g. yourself) coming to a home directory
-can find documentation as to how the particular user has structured their
-environment.
+Secrets do not belong in dotfiles repositories. As much as possible, try to
+prevent committing and pushing secrets to public repositories, dotfiles or
+otherwise. If you believe you've done this, please review the
+[documentation](https://help.github.com/articles/remove-sensitive-data/)
+on how to handle removal of sensitive data.
 
-###### .gitignore
-The gitignore is set to match everything (`*`) to prevent accidentally adding
-files to the repo. A side effect of this is that the first tile a file is
-added the `-f / --force` flag will be required. Subsequent updates to added
-files are performed as normal. Because git will use the first repository that
-is encountered while traversing to the root of the filesystem tree, this will
-not affect any additional git repositories that exist within this repository.
+---
+###### References:
+- The git book: https://git-scm.com/book/en/v2/
+- GitHub does dotfiles: https://dotfiles.github.io
+- Removing sensitive data from GitHub: https://help.github.com/articles/remove-sensitive-data/
