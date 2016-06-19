@@ -11,6 +11,7 @@ directory. To set up the home directory to track this repository,
 $ git init
 $ git remote add origin git@github.com:MurphyMarkW/git-dotfiles.git
 $ git pull origin master
+$ git submodule init
 ```
 
 Since the home directory will likely not be empty, git may complain about
@@ -64,3 +65,11 @@ Configuration options for git.
 
 ###### .config/nvim
 Configuration options for NeoVim.
+
+###### zsh
+- .zshrc
+- .zpreztorc
+- .zshenv
+- .zlogin
+- .zlogout
+- .zprofile
