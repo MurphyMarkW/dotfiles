@@ -10,6 +10,11 @@ execute pathogen#infect()
 " everybody calls it syntax highlighting we'll stick with that.
 syntax on
 
+" Load color scheme {name}.  This searches 'runtimepath'
+" for the file "colors/{name}.vim.  The first one that
+" is found is loaded.
+colorscheme permafrost
+
 " When set to "dark", Vim will try to use colors that look good on a dark
 " background. When set to "light", Vim will try to use colors that look good
 " on a light background. Any other value is illegal. Vim tries to set the

@@ -25,3 +25,9 @@
 [submodule ".config/nvim/modules/vim-syntastic"]
 	path = .config/nvim/modules/vim-syntastic
 	url = https://github.com/scrooloose/syntastic.git
+[submodule ".config/nvim/vim-colors-solarized"]
+	path = .config/nvim/modules/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule ".config/nvim/modules/vim-color-permafrost"]
+	path = .config/nvim/modules/vim-colors-permafrost
+	url = https://github.com/MurphyMarkW/vim-color-permafrost
