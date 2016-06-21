@@ -1,1 +1,1 @@
-modules/nvim-deoplete/rplugin/python3/deoplete
+../../modules/nvim-deoplete/rplugin/python3/deoplete
