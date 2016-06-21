@@ -1,7 +1,7 @@
 " Descriptions for options pulled from:
 " http://vimdoc.sourceforge.net/htmldoc/options.html
 
-"execute pathogen#infect()
+execute pathogen#infect()
 
 " Syntax highlighting enables Vim to show parts of the text in another font or
 " color. Those parts can be specific keywords or text matching a pattern. Vim
@@ -82,4 +82,4 @@ set ruler
 " Vim can detect the type of file that is edited. This is done by checking the
 " file name and sometimes by inspecting the contents of the file for specific
 " text.
-filetype plugin on
+filetype plugin indent on

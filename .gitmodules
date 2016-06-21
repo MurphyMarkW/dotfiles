@@ -1,3 +1,6 @@
 [submodule ".zprezto"]
 	path = .zprezto
 	url = https://github.com/sorin-ionescu/prezto.git
+[submodule ".config/nvim/bundle/haskell-vim"]
+	path = .config/nvim/bundle/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim.git
