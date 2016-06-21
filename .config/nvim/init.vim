@@ -21,7 +21,7 @@ set background=dark
 "   0: never
 "   1: only if there are at least two windows
 "   2: always
-set laststatus=2
+set laststatus=0
 
 " In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
 " Spaces are used in indents with the '>' and '<' commands and when

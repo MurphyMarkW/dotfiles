@@ -1,1 +1,1 @@
-modules/nvim-deoplete/plugin/deoplete.vim
+../modules/nvim-deoplete/plugin/deoplete.vim
