@@ -19,3 +19,6 @@
 [submodule ".config/nvim/modules/vim-pathogen"]
 	path = .config/nvim/modules/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule ".config/nvim/modules/vim-go"]
+	path = .config/nvim/modules/vim-go
+	url = https://github.com/fatih/vim-go
