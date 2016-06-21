@@ -1,0 +1,1 @@
+../modules/nvim-deoplete/autoload/deoplete.vim

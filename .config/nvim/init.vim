@@ -21,7 +21,7 @@ set background=dark
 "   0: never
 "   1: only if there are at least two windows
 "   2: always
-set laststatus=0
+set laststatus=2
 
 " In Insert mode: Use the appropriate number of spaces to insert a <Tab>.
 " Spaces are used in indents with the '>' and '<' commands and when
@@ -83,3 +83,7 @@ set ruler
 " file name and sometimes by inspecting the contents of the file for specific
 " text.
 filetype plugin indent on
+
+" Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
+" NOTE may need to run UpdateRemotePlugins on first start
+let g:deoplete#enable_at_startup = 1
