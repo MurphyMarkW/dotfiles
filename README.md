@@ -10,7 +10,7 @@ Setting up a new home directory to use this repository is as simple as:
 
 ```bash
 $ git init
-$ git remote add origin git@github.com:MurphyMarkW/git-dotfiles.git
+$ git remote add origin git@github.com:MurphyMarkW/dotfiles.git
 $ git pull origin home
 $ git submodule update --init --recursive
 ```
