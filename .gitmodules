@@ -1,6 +1,6 @@
 [submodule ".zprezto"]
 	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
+	url = https://github.com/MurphyMarkW/prezto.git
 [submodule ".config/nvim/bundle/haskell-vim"]
 	path = .config/nvim/modules/haskell-vim
 	url = https://github.com/neovimhaskell/haskell-vim.git
@@ -31,3 +31,6 @@
 [submodule ".config/nvim/modules/vim-color-permafrost"]
 	path = .config/nvim/modules/vim-colors-permafrost
 	url = https://github.com/MurphyMarkW/vim-color-permafrost
+[submodule ".config/nvim/modules/rust.vim"]
+	path = .config/nvim/modules/vim-rust
+	url = https://github.com/rust-lang/rust.vim.git
