@@ -34,3 +34,12 @@
 [submodule ".config/nvim/modules/rust.vim"]
 	path = .config/nvim/modules/vim-rust
 	url = https://github.com/rust-lang/rust.vim.git
+[submodule ".config/nvim/modules/vim-airline-themes"]
+	path = .config/nvim/modules/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+[submodule ".config/nvim/modules/neomake"]
+	path = .config/nvim/modules/neomake
+	url = https://github.com/neomake/neomake.git
+[submodule ".config/nvim/modules/vim-supertab"]
+	path = .config/nvim/modules/vim-supertab
+	url = git@github.com:ervandew/supertab.git

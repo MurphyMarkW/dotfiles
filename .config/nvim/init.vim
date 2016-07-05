@@ -92,3 +92,6 @@ filetype plugin indent on
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
 " NOTE may need to run UpdateRemotePlugins on first start
 let g:deoplete#enable_at_startup = 1
+
+let g:airline_theme = 'hybridline'
+let g:airline_powerline_fonts = 1
