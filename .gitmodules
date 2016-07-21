@@ -38,7 +38,7 @@
 	path = .config/nvim/modules/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
 [submodule ".config/nvim/modules/neomake"]
-	path = .config/nvim/modules/neomake
+	path = .config/nvim/modules/nvim-neomake
 	url = https://github.com/neomake/neomake.git
 [submodule ".config/nvim/modules/vim-supertab"]
 	path = .config/nvim/modules/vim-supertab
