@@ -1,9 +1,9 @@
 [hub]
     protocol = https
 [user]
-    name = MurphyMarkW
-    email = murphy.mark.w+github@gmail.com
-    signingkey = A48AE08B
+    name = Mark W Murphy
+    email = marmurp2@cisco.com
+    signingkey = A6D1777A45B6D4B3
 [credential]
     helper = cache
 [alias]
