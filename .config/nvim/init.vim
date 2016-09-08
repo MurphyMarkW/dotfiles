@@ -94,4 +94,4 @@ filetype plugin indent on
 let g:deoplete#enable_at_startup = 1
 
 let g:airline_theme = 'hybridline'
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
