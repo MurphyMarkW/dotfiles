@@ -10,9 +10,6 @@
 [submodule ".config/nvim/bundle/vim-dockerfile"]
 	path = .config/nvim/modules/vim-dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule ".config/nvim/bundle/vim-javascript"]
-	path = .config/nvim/modules/vim-javascript
-	url = https://github.com/jelera/vim-javascript-syntax.git
 [submodule ".config/nvim/modules/nvim-deoplete"]
 	path = .config/nvim/modules/nvim-deoplete
 	url = https://github.com/Shougo/deoplete.nvim
@@ -46,3 +43,6 @@
 [submodule ".config/nvim/modules/vim-racer"]
 	path = .config/nvim/modules/vim-racer
 	url = https://github.com/racer-rust/vim-racer.git
+[submodule ".config/nvim/modules/vim-javascript"]
+	path = .config/nvim/modules/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
