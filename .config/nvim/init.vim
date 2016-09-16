@@ -89,6 +89,9 @@ set ruler
 " text.
 filetype plugin indent on
 
+" Enable use of the system clipboard for copypasta.
+set clipboard+=unnamedplus
+
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
 " NOTE may need to run UpdateRemotePlugins on first start
 let g:deoplete#enable_at_startup = 1
