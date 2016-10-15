@@ -84,6 +84,11 @@ set nowrap
 "   45% - relative position in the file
 set ruler
 
+" When off a buffer is unloaded when it is |abandon|ed.  When on a
+" buffer becomes hidden when it is |abandon|ed.  If the buffer is still
+" displayed in another window, it does not become hidden, of course.
+set hidden
+
 " Vim can detect the type of file that is edited. This is done by checking the
 " file name and sometimes by inspecting the contents of the file for specific
 " text.
@@ -92,9 +97,13 @@ filetype plugin indent on
 " Enable use of the system clipboard for copypasta.
 set clipboard+=unnamedplus
 
+" Enable Omnicompletion
+set omnifunc=syntaxcomplete#Complete
+"let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
 " NOTE may need to run UpdateRemotePlugins on first start
 let g:deoplete#enable_at_startup = 1
 
-let g:airline_theme = 'hybridline'
-let g:airline_powerline_fonts = 1
+let g:racer_cmd = "/Users/mark/.cargo/bin/racer"
+let $RUST_SRC_PATH="/Users/mark/src/rust/src"

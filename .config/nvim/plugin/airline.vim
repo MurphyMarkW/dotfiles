@@ -6,3 +6,8 @@ set laststatus=2
 
 " Automatically displays all buffers when there's only one tab open.
 let g:airline#extensions#tabline#enabled=1
+
+" Set some custom airline settings.
+let g:airline_theme = 'hybridline'
+let g:airline_powerline_fonts = 1
+
