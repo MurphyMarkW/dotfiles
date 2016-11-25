@@ -3,7 +3,7 @@
 [user]
     name = MurphyMarkW
     email = murphy.mark.w+github@gmail.com
-    signingkey = A48AE08B
+    signingkey = 7A81F954
 [credential]
     helper = cache
 [alias]
