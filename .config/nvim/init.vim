@@ -105,5 +105,7 @@ set omnifunc=syntaxcomplete#Complete
 " NOTE may need to run UpdateRemotePlugins on first start
 let g:deoplete#enable_at_startup = 1
 
-let g:racer_cmd = "/Users/mark/.cargo/bin/racer"
-let $RUST_SRC_PATH="/Users/mark/src/rust/rust/src"
+" Enable racer-based rust completion.
+" TODO move this to another vim plugin file
+let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path='/Users/mark/src/rust/rust/src'
