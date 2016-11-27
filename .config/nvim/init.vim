@@ -106,4 +106,4 @@ set omnifunc=syntaxcomplete#Complete
 let g:deoplete#enable_at_startup = 1
 
 let g:racer_cmd = "/Users/mark/.cargo/bin/racer"
-let $RUST_SRC_PATH="/Users/mark/src/rust/src"
+let $RUST_SRC_PATH="/Users/mark/src/rust/rust/src"
