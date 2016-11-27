@@ -46,3 +46,6 @@
 [submodule ".config/nvim/modules/vim-javascript"]
 	path = .config/nvim/modules/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
+[submodule ".config/nvim/bundle/nvim-deoplete-rust"]
+	path = .config/nvim/bundle/nvim-deoplete-rust
+	url = https://github.com/sebastianmarkow/deoplete-rust.git
