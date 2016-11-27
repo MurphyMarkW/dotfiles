@@ -40,9 +40,6 @@
 [submodule ".config/nvim/modules/vim-supertab"]
 	path = .config/nvim/modules/vim-supertab
 	url = https://github.com/ervandew/supertab.git
-[submodule ".config/nvim/modules/vim-racer"]
-	path = .config/nvim/modules/vim-racer
-	url = https://github.com/racer-rust/vim-racer.git
 [submodule ".config/nvim/modules/vim-javascript"]
 	path = .config/nvim/modules/vim-javascript
 	url = https://github.com/pangloss/vim-javascript.git
