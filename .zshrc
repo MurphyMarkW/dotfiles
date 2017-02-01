@@ -6,7 +6,9 @@ fi
 alias v='vim'
 alias vim='nvim'
 
+# Golang exports.
 export GOPATH=$HOME/src/go
+export PATH=$PATH:$GOPATH/bin
 
 # Source any secrets...
 source .secrets
