@@ -10,5 +10,7 @@ alias vim='nvim'
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
 
+source $HOME/.cargo/env
+
 # Source any secrets...
 source .secrets
