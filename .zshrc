@@ -13,4 +13,4 @@ export PATH=$PATH:$GOPATH/bin
 source $HOME/.cargo/env
 
 # Source any secrets...
-source .secrets
+source $HOME/.secrets
