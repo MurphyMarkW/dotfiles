@@ -49,3 +49,6 @@
 [submodule ".config/nvim/bundle/vim-hashicorp-tools"]
 	path = .config/nvim/bundle/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
+[submodule ".config/nvim/modules/vim-toml"]
+	path = .config/nvim/modules/vim-toml
+	url = https://github.com/cespare/vim-toml.git
