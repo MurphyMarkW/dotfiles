@@ -52,3 +52,6 @@
 [submodule ".config/nvim/modules/vim-toml"]
 	path = .config/nvim/modules/vim-toml
 	url = https://github.com/cespare/vim-toml.git
+[submodule ".config/nvim/modules/vim-deoplete-jedi"]
+	path = .config/nvim/modules/vim-deoplete-jedi
+	url = https://github.com/zchee/deoplete-jedi
