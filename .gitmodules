@@ -55,3 +55,6 @@
 [submodule ".config/nvim/modules/vim-deoplete-jedi"]
 	path = .config/nvim/modules/vim-deoplete-jedi
 	url = https://github.com/zchee/deoplete-jedi
+[submodule ".config/nvim/modules/vim-yaml"]
+	path = .config/nvim/modules/vim-yaml
+	url = https://github.com/stephpy/vim-yaml.git
