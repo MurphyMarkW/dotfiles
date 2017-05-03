@@ -3,12 +3,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Load custom prompt...
-autoload -Uz promptinit
-
-promptinit
-prompt sorin
-
 # Set a bunch of aliases...
 alias v='vim'
 alias vim='nvim'
