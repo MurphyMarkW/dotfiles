@@ -46,8 +46,8 @@
 [submodule ".config/nvim/bundle/nvim-deoplete-rust"]
 	path = .config/nvim/bundle/nvim-deoplete-rust
 	url = https://github.com/sebastianmarkow/deoplete-rust.git
-[submodule ".config/nvim/bundle/vim-hashicorp-tools"]
-	path = .config/nvim/bundle/vim-hashicorp-tools
+[submodule ".config/nvim/modules/vim-hashicorp-tools"]
+	path = .config/nvim/modules/vim-hashicorp-tools
 	url = https://github.com/hashivim/vim-hashicorp-tools.git
 [submodule ".config/nvim/modules/vim-toml"]
 	path = .config/nvim/modules/vim-toml
