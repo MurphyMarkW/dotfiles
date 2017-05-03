@@ -1,0 +1,10 @@
+{
+  "bootstrap_expect": 1,
+  "client_addr": "0.0.0.0",
+  "datacenter": "minibook",
+  "data_dir": "/consul/data",
+  "log_level": "INFO",
+  "node_name": "minibook",
+  "server": true,
+  "ui": true
+}
