@@ -108,4 +108,3 @@ let g:deoplete#enable_at_startup = 1
 " Enable racer-based rust completion.
 " TODO move this to another vim plugin file
 let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/Users/mark/src/rust/rust/src'

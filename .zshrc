@@ -20,7 +20,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # Rust exports...
 source $HOME/.cargo/env
-export RUST_SRC_PATH=$HOME/src/rust/rust/src
+export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 # And finally, source any secrets.
 source $HOME/.secrets
