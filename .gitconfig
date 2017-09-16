@@ -2,8 +2,8 @@
     protocol = https
 [user]
     name = MurphyMarkW
-    email = murphy.mark.w+github@gmail.com
-    signingkey = 7A81F954
+    email = mark@gudcodes.io
+    signingkey = 67A84BDFE7CF69A1
 [credential]
     helper = cache
 [alias]
