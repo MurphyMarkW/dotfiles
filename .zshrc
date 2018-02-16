@@ -10,7 +10,7 @@ alias vim='nvim'
 alias top='htop'
 
 # z directory usage tracking, because it's awesome.
-source /usr/local/etc/profile.d/z.sh
+source $HOME/.local/z/z.sh
 
 # Go exports...
 export GOPATH=$HOME/src/go
@@ -24,7 +24,7 @@ export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 
 # And finally, source any secrets.
-source $HOME/.secrets
+source $HOME/.secrets || true
 
 # added by travis gem
 [ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh

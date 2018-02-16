@@ -58,3 +58,6 @@
 [submodule ".config/nvim/modules/vim-yaml"]
 	path = .config/nvim/modules/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
+[submodule ".local/z"]
+	path = .local/z
+	url = https://github.com/rupa/z
