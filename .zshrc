@@ -4,10 +4,19 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Set a bunch of aliases...
-alias e='vi'
 alias vi='vim'
 alias vim='nvim'
 alias top='htop'
+
+# Redefine a bunch of aliases for ls -> exa.
+alias ls='exa'
+alias l='exa -1'
+alias la='ll'
+alias lt='ll --modified'
+alias lu='ll --accessed'
+alias lk='ll -rs name'
+alias lc='lt'
+
 
 # z directory usage tracking, because it's awesome.
 source $HOME/.local/z/z.sh
