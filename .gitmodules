@@ -58,3 +58,6 @@
 [submodule ".config/nvim/modules/vim-yaml"]
 	path = .config/nvim/modules/vim-yaml
 	url = https://github.com/stephpy/vim-yaml.git
+[submodule ".config/nvim/modules/vim-capnp"]
+	path = .config/nvim/modules/vim-capnp
+	url = https://github.com/cstrahan/vim-capnp.git
