@@ -108,3 +108,6 @@ let g:deoplete#enable_at_startup = 1
 " Enable racer-based rust completion.
 " TODO move this to another vim plugin file
 let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
+
+let g:python_host_prog = '/usr/local/opt/python/libexec/bin/python'
+let g:python3_host_prog = '/usr/local/opt/python/libexec/bin/python'

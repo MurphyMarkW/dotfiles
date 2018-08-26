@@ -4,6 +4,7 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Set a bunch of aliases...
+alias edit='e'
 alias e='vi'
 alias vi='vim'
 alias vim='nvim'
@@ -34,7 +35,6 @@ source $HOME/.cargo/env
 export RUST_SRC_PATH="$(rustc --print sysroot)/lib/rustlib/src/rust/src"
 
 # Android exports...
-export PATH=$PATH:$HOME/Library/Android/sdk/platform-tools
 export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
