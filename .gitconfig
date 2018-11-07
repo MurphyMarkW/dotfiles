@@ -3,7 +3,7 @@
 [user]
     name = MurphyMarkW
     email = mark@gudcodes.io
-    signingkey = 67A84BDFE7CF69A1
+    signingkey = D15B40E423D58291
 [credential]
     helper = cache
 [alias]

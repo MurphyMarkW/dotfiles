@@ -26,6 +26,9 @@ source /usr/local/etc/profile.d/z.sh
 # Homebrew-installed paths.
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
+# To allow GNUPG to query for passwords.
+export GPG_TTY=$(tty)
+
 # Go exports...
 export GOPATH=$HOME/src/go
 export PATH=$PATH:$GOPATH/bin
