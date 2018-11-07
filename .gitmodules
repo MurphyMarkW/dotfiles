@@ -61,3 +61,6 @@
 [submodule ".config/nvim/modules/vim-capnp"]
 	path = .config/nvim/modules/vim-capnp
 	url = https://github.com/cstrahan/vim-capnp.git
+[submodule ".config/nvim/modules/vim-tabnine"]
+	path = .config/nvim/modules/vim-tabnine
+	url = https://github.com/zxqfl/tabnine-vim
