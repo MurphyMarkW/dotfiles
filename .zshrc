@@ -42,6 +42,12 @@ export ANDROID_SDK_ROOT="/usr/local/share/android-sdk"
 export ANDROID_NDK_HOME="/usr/local/share/android-ndk"
 export ANDROID_HOME="$ANDROID_SDK_ROOT"
 
+# Android compilers...
+export PATH=${PATH}:${HOME}/src/android-ndk/arm/bin/
+export PATH=${PATH}:${HOME}/src/android-ndk/arm64/bin/
+export PATH=${PATH}:${HOME}/src/android-ndk/x86/bin/
+export PATH=${PATH}:${HOME}/src/android-ndk/x86_64/bin/
+
 # added by travis gem
 [ -f /Users/mark/.travis/travis.sh ] && source /Users/mark/.travis/travis.sh
 
