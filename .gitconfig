@@ -1,9 +1,9 @@
 [hub]
     protocol = https
 [user]
-    name = MurphyMarkW
-    email = mark@gudcodes.io
-    signingkey = D15B40E423D58291
+    name = Mark W. Murphy
+    email = mark@gudcodes.dev
+    signingkey = 33F1E3CAAE1D59BC
 [credential]
     helper = cache
 [alias]
