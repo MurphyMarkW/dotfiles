@@ -55,3 +55,6 @@
 [submodule ".config/nvim/modules/vim-capnp"]
 	path = .config/nvim/modules/vim-capnp
 	url = https://github.com/cstrahan/vim-capnp.git
+[submodule "/Users/mark/.config/nvim/modules/vim-hcl"]
+	path = /Users/mark/.config/nvim/modules/vim-hcl
+	url = https://github.com/jvirtanen/vim-hcl.git
