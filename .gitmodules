@@ -1,9 +1,3 @@
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
-[submodule ".config/nvim/bundle/haskell-vim"]
-	path = .config/nvim/modules/haskell-vim
-	url = https://github.com/neovimhaskell/haskell-vim.git
 [submodule ".config/nvim/bundle/vim-airline"]
 	path = .config/nvim/modules/vim-airline
 	url = https://github.com/bling/vim-airline
