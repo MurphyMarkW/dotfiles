@@ -98,6 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Source secret environment variables from the keychain.
+# This lets us avoid keeping secrets in plaintext, but still be able
+# to just simple source secrets files into our environment.
+source $HOME/.secrets/functions.sh
+
 # Temporarily emulate x86_64 for everything.
 alias brew='arch -x86_64 brew'
 
