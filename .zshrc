@@ -115,6 +115,9 @@ alias lu='ll --accessed'
 alias lk='ll -rs name'
 alias lc='lt'
 
+# cat replacement
+alias cat='bat -p'
+
 # To allow GNUPG to query for passwords.
 export GPG_TTY=$(tty)
 
