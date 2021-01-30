@@ -11,6 +11,8 @@ else
   Plug 'roxma/vim-hug-neovim-rpc'
 endif
 
+Plug 'racer-rust/vim-racer'
+
 call plug#end()
 
 " Syntax highlighting enables Vim to show parts of the text in another font or
@@ -110,7 +112,12 @@ set clipboard+=unnamedplus
 
 " Enable Omnicompletion
 set omnifunc=syntaxcomplete#Complete
-"let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+
+" Disable preview window.
+set completeopt-=preview
+
+" Use option+return to trigger deoplete.
+imap <M-NL> <c-x><c-o>
 
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
 " NOTE may need to run UpdateRemotePlugins on first start
