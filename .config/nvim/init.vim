@@ -1,7 +1,17 @@
 " Descriptions for options pulled from:
 " http://vimdoc.sourceforge.net/htmldoc/options.html
 
-execute pathogen#infect()
+call plug#begin()
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+call plug#end()
 
 " Syntax highlighting enables Vim to show parts of the text in another font or
 " color. Those parts can be specific keywords or text matching a pattern. Vim
@@ -107,8 +117,4 @@ set omnifunc=syntaxcomplete#Complete
 let g:deoplete#enable_at_startup = 1
 
 " Enable racer-based rust completion.
-" TODO move this to another vim plugin file
 let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
-
-let g:python_host_prog = '/usr/local/opt/python/libexec/bin/python'
-let g:python3_host_prog = '/usr/local/opt/python/libexec/bin/python'

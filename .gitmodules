@@ -4,9 +4,6 @@
 [submodule ".config/nvim/bundle/vim-dockerfile"]
 	path = .config/nvim/modules/vim-dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule ".config/nvim/modules/nvim-deoplete"]
-	path = .config/nvim/modules/nvim-deoplete
-	url = https://github.com/Shougo/deoplete.nvim
 [submodule ".config/nvim/modules/vim-pathogen"]
 	path = .config/nvim/modules/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
