@@ -13,7 +13,8 @@ syntax on
 " Load color scheme {name}.  This searches 'runtimepath'
 " for the file "colors/{name}.vim.  The first one that
 " is found is loaded.
-colorscheme permafrost
+"colorscheme permafrost
+colorscheme molokai
 
 " When set to "dark", Vim will try to use colors that look good on a dark
 " background. When set to "light", Vim will try to use colors that look good
@@ -36,10 +37,10 @@ set expandtab
 
 " Number of spaces that a <Tab> in the file counts for. Also see the ':retab'
 " command, and 'softtabstop' option.
-set tabstop=4
+set tabstop=2
 
 " Number of spaces to use for each step of (auto)indent.
-set shiftwidth=4
+set shiftwidth=2
 
 " Enable the use of the mouse.
 set mouse=a
