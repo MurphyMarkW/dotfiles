@@ -103,8 +103,11 @@ source $ZSH/oh-my-zsh.sh
 # to just simple source secrets files into our environment.
 source $HOME/.secrets/functions.sh
 
-# Temporarily emulate x86_64 for everything.
+# Homebrew ARM shenanigans.
 alias brew='arch -x86_64 brew'
+alias brew-arm='/opt/homebrew/bin/brew'
+
+export PATH="$PATH:/opt/homebrew/bin"
 
 # Chain edit commands off to neovim.
 alias e='vi'
@@ -125,6 +128,14 @@ alias cat='bat -p'
 
 # To allow GNUPG to query for passwords.
 export GPG_TTY=$(tty)
+
+# Rust development envs.
+export RUST_SRC_PATH=$(rustc --print sysroot)/lib/rustlib/src/rust/library
+
+# Go development envs.
+export GOPATH="${HOME}/src/go"
+export GOROOT="$(brew-arm --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
 
 # z directory usage tracking, because it's awesome.
 source /usr/local/etc/profile.d/z.sh

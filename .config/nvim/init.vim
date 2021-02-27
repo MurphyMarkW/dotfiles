@@ -1,20 +1,6 @@
 " Descriptions for options pulled from:
 " http://vimdoc.sourceforge.net/htmldoc/options.html
 
-call plug#begin()
-
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-endif
-
-Plug 'racer-rust/vim-racer'
-
-call plug#end()
-
 " Syntax highlighting enables Vim to show parts of the text in another font or
 " color. Those parts can be specific keywords or text matching a pattern. Vim
 " doesn't parse the whole file (to keep it fast), so the highlighting has its
@@ -111,17 +97,38 @@ filetype plugin indent on
 set clipboard+=unnamedplus
 
 " Enable Omnicompletion
-set omnifunc=syntaxcomplete#Complete
+"set omnifunc=syntaxcomplete#Complete
+set omnifunc=ale#completion#OmniFunc
 
 " Disable preview window.
 set completeopt-=preview
 
-" Use option+return to trigger deoplete.
+" Use option+return to trigger omnifunc.
 imap <M-NL> <c-x><c-o>
 
+" Use the async linting engine.
+let g:ale_completion_enabled = 1
+"let g:ale_completion_autoimport = 1
+
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
-" NOTE may need to run UpdateRemotePlugins on first start
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 " Enable racer-based rust completion.
-let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
+let g:racer_experimental_completer = 1
+
+" Load plugins.
+call plug#begin()
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
+Plug 'dense-analysis/ale'
+
+call plug#end()
