@@ -1,18 +1,9 @@
-[submodule ".zprezto"]
-	path = .zprezto
-	url = https://github.com/sorin-ionescu/prezto.git
-[submodule ".config/nvim/bundle/haskell-vim"]
-	path = .config/nvim/modules/haskell-vim
-	url = https://github.com/neovimhaskell/haskell-vim.git
 [submodule ".config/nvim/bundle/vim-airline"]
 	path = .config/nvim/modules/vim-airline
 	url = https://github.com/bling/vim-airline
 [submodule ".config/nvim/bundle/vim-dockerfile"]
 	path = .config/nvim/modules/vim-dockerfile
 	url = https://github.com/ekalinin/Dockerfile.vim.git
-[submodule ".config/nvim/modules/nvim-deoplete"]
-	path = .config/nvim/modules/nvim-deoplete
-	url = https://github.com/Shougo/deoplete.nvim
 [submodule ".config/nvim/modules/vim-pathogen"]
 	path = .config/nvim/modules/vim-pathogen
 	url = https://github.com/tpope/vim-pathogen
@@ -61,3 +52,6 @@
 [submodule ".config/nvim/modules/vim-capnp"]
 	path = .config/nvim/modules/vim-capnp
 	url = https://github.com/cstrahan/vim-capnp.git
+[submodule "/Users/mark/.config/nvim/modules/vim-hcl"]
+	path = /Users/mark/.config/nvim/modules/vim-hcl
+	url = https://github.com/jvirtanen/vim-hcl.git

@@ -1,8 +1,6 @@
 " Descriptions for options pulled from:
 " http://vimdoc.sourceforge.net/htmldoc/options.html
 
-execute pathogen#infect()
-
 " Syntax highlighting enables Vim to show parts of the text in another font or
 " color. Those parts can be specific keywords or text matching a pattern. Vim
 " doesn't parse the whole file (to keep it fast), so the highlighting has its
@@ -13,7 +11,8 @@ syntax on
 " Load color scheme {name}.  This searches 'runtimepath'
 " for the file "colors/{name}.vim.  The first one that
 " is found is loaded.
-colorscheme permafrost
+"colorscheme permafrost
+colorscheme molokai
 
 " When set to "dark", Vim will try to use colors that look good on a dark
 " background. When set to "light", Vim will try to use colors that look good
@@ -36,10 +35,10 @@ set expandtab
 
 " Number of spaces that a <Tab> in the file counts for. Also see the ':retab'
 " command, and 'softtabstop' option.
-set tabstop=4
+set tabstop=2
 
 " Number of spaces to use for each step of (auto)indent.
-set shiftwidth=4
+set shiftwidth=2
 
 " Enable the use of the mouse.
 set mouse=a
@@ -98,16 +97,38 @@ filetype plugin indent on
 set clipboard+=unnamedplus
 
 " Enable Omnicompletion
-set omnifunc=syntaxcomplete#Complete
-"let g:SuperTabDefaultCompletionType="<c-x><c-o>"
+"set omnifunc=syntaxcomplete#Complete
+set omnifunc=ale#completion#OmniFunc
+
+" Disable preview window.
+set completeopt-=preview
+
+" Use option+return to trigger omnifunc.
+imap <M-NL> <c-x><c-o>
+
+" Use the async linting engine.
+let g:ale_completion_enabled = 1
+"let g:ale_completion_autoimport = 1
 
 " Enable async auto-completion: https://github.com/Shougo/deoplete.nvim
-" NOTE may need to run UpdateRemotePlugins on first start
-let g:deoplete#enable_at_startup = 1
+"let g:deoplete#enable_at_startup = 1
 
 " Enable racer-based rust completion.
-" TODO move this to another vim plugin file
-let g:deoplete#sources#rust#racer_binary='/Users/mark/.cargo/bin/racer'
+let g:racer_experimental_completer = 1
 
-let g:python_host_prog = '/usr/local/opt/python/libexec/bin/python'
-let g:python3_host_prog = '/usr/local/opt/python/libexec/bin/python'
+" Load plugins.
+call plug#begin()
+
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+endif
+
+Plug 'racer-rust/vim-racer'
+Plug 'cespare/vim-toml'
+Plug 'dense-analysis/ale'
+
+call plug#end()
