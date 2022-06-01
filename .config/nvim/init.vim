@@ -95,3 +95,6 @@ let g:deoplete#enable_at_startup = 1
 
 let g:airline_theme = 'hybridline'
 let g:airline_powerline_fonts = 0
+
+let g:python_host_prog = '/usr/bin/python'
+let g:python3_host_prog = '/usr/bin/python3'
